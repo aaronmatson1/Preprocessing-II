@@ -1,1 +1,46 @@
 // Navigation Styles here
+
+//----Variables----\\
+
+
+//-------------\\
+
+//-------Mix-in's -----\\
+  .flex{
+    display:flex;
+    justify-content: space-around;
+
+  }
+
+//---------------------\\
+
+
+nav {
+  .row{
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 2px dashed #C0C0C0;
+
+    h1{
+      font-size: 3em;
+    }
+    .logo-column{
+      width:20%;
+      margin-left:40px;
+      }
+    .nav-column{
+      display: flex;
+      width: 80%;
+      justify-content: flex-end;
+      margin-right: 40px;
+    }
+      ul{
+        .flex();
+        font-size: 18px;
+
+      }
+      li{
+        margin-left: 50px;
+      }
+    }
+  }
