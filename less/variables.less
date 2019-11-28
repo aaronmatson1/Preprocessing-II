@@ -14,53 +14,5 @@
 @sandy-beach: #FFEBCD;
 
 // Escaped values
-@mobile: ~"(min-width: 500px)";
-@tablet: ~"(min-width: 800px)";
-@desktop: ~"(min-width: 1000px)";
-
-
-.row {
-    display: flex;
-    padding: 40px 0;
-    border-bottom: 2px dashed #C0C0C0;
-
-    @media @mobile{
-      flex-direction: column;
-      margin: 0;
-    }
-    //LOGO COLUM\\
-    .logo-column h2{
-      font-size: 2rem;
-      padding: 10px;
-
-      @media @mobile {
-        padding:0;
-        font-size: 5rem;
-        text-align: center;
-
-      }
-
-      @media @tablet {
-        padding: 20px;
-      }
-
-      @media @desktop {
-        font-size: 1.8rem;
-        padding: 0 10px;
-        font-size: 3rem;
-      }
-    }
-
-    //Navitation column\\
-    .nav-column{
-      display: flex;
-      width:100%;
-
-      @media @mobile{
-        width: 100%;
-        padding-top: 30px;
-
-      }
-    }
-    //END NAVIGATION COLUMN\\
-}
+@mobile: ~"(max-width: 500px)";
+@desktop: ~"(min-width: 801px)";
