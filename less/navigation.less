@@ -1,1 +1,125 @@
 // Navigation Styles here
+
+//----Variables----\\
+
+
+//-------------\\
+
+//-------Mix-in's -----\\
+  .flex{
+    display:flex;
+    justify-content: space-around;
+
+  }
+
+//---------------------\\
+
+.navbar {
+            font-size: 18px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 22px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        .navbar-toggle {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            cursor: pointer;
+            color: grey;
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media @desktop {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+}
+
+/*av {
+  .row{
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 2px dashed #C0C0C0;
+
+    h1{
+      font-size: 3em;
+    }
+    .logo-column{
+      width:20%;
+      margin-left:40px;
+      }
+    .nav-column{
+      display: flex;
+      width: 80%;
+      justify-content: flex-end;
+      margin-right: 40px;
+    }
+      ul{
+        .flex();
+        font-size: 18px;
+
+      }
+      li{
+        margin-left: 50px;
+      }
+    }
+  }*/
